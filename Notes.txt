@@ -7,3 +7,5 @@
 -> Every React uses bundler that works behind the scene to make the things more effective 
 -> {variable name} : If we write something inside this curly braces it will be treated as variable, can't write any if else or loops only we can write here is evaluated expression 
 -> React.createElement : used to inject the elements
+-> Basically the idea of react is, it controls UI updation 
+-> 
