@@ -2,6 +2,8 @@
 -> If we make our react app using react app then there is a Reactscript given which helps in usiong the JS without really using it, while in vite-react comnbination, we directly load that in HTML page.
 -> SPA : A single-page application is defined as an application (web app or website) that loads only a single page and then rewrites the page with new content fetched from a web server as the user interacts with it instead of loading a new page for every interaction
 -> JSX type files means the files that are returning the HTML  
-->In JSX it is mandatory always that we only return one element, To solve the problem of returning many elements, we can wrap it into a div, which also can be done as simple <> </>, where <> (empty tag) is known as fragments 
+-> In JSX it is mandatory always that we only return one element, To solve the problem of returning many elements, we can wrap it into a div, which also can be done as simple <> </>, where <> (empty tag) is known as fragments 
 -> Components : Functions that we are exporting and importing 
--> 
+-> Every React uses bundler that works behind the scene to make the things more effective 
+-> {variable name} : If we write something inside this curly braces it will be treated as variable, can't write any if else or loops only we can write here is evaluated expression 
+-> React.createElement : used to inject the elements
