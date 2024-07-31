@@ -1,6 +1,6 @@
                        *********  ReactJS  **********
 -> React creates a VIRTUAL DOM in memory, instead of making the changes in browser's DOM
--> 
+-> createRoot () : it comapres between the DOM of browser with the DOM created by itself and then comapres both of them and then only make changes in the things that got affected by UI updation, while browsers completely refreshes its DOM
 
 -> In reactJS, we can write our custom tags. {manifest.json - is for mobile apps}
 -> If we make our react app using react app then there is a Reactscript given which helps in usiong the JS without really using it, while in vite-react comnbination, we directly load that in HTML page.
@@ -34,7 +34,7 @@ React Fibre : https://github.com/acdlite/react-fiber-architecture  {Best Resourc
 -> If we see any error generally in Tailwind on copying it from website just try to close the tags 
 
                             *****  Props  *****
-                            
+
 -> Props are arguments passed into React components.
 -> Props are passed to components via HTML attributes.
 -> props stands for properties. 
@@ -44,4 +44,6 @@ React Fibre : https://github.com/acdlite/react-fiber-architecture  {Best Resourc
 -> We can pass values from one components to another and can access it by passing the argument in the function of card {Like : we passed username and accessed it through props}
 -> Always try to handle the props also by adding it as parameter just not adding it in App.jsx
 -> Always pass the default value of any variable so that if it do not get passed then the web page will show that value like we have passed of btnText = "visit me"
--> 
+
+
+-> So if we write (counter+1) 4 times in counter program and check what will be the output, then output will be still be the same until we make the program as callback function to get the value
