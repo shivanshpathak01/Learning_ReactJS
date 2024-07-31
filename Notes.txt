@@ -20,4 +20,10 @@ React Fibre : https://github.com/acdlite/react-fiber-architecture  {Best Resourc
     In a UI, it's not necessary for every update to be applied immediately; in fact, doing so can be wasteful, causing frames to drop and degrading the user experience.
     Different types of updates have different priorities — an animation update needs to complete more quickly than, say, an update from a data store.
     A push-based approach requires the app (you, the programmer) to decide how to schedule work. A pull-based approach allows the framework (React) to be smart and make those decisions for you.
+-> If we see any error generally in Tailwind on copying it from website just try to close the tags 
+-> Props : Basically props makes the Components reusable. 
+-> we can pass even objects too in json format but the ideal way of doing it is declaring the variable somewhere else and then passing it
+-> We can pass values from one components to another and can access it by passing the argument in the function of card {Like : we passed username and accessed it through props}
+-> Always try to handle the props also by adding it as parameter just not adding it in App.jsx
+-> Always pass the default value of any variable so that if it do not get passed then the web page will show that value like we have passed of btnText = "visit me"
 -> 
