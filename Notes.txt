@@ -1,6 +1,17 @@
+                       *********  ReactJS  **********
+-> React creates a VIRTUAL DOM in memory, instead of making the changes in browser's DOM
+-> 
+
 -> In reactJS, we can write our custom tags. {manifest.json - is for mobile apps}
 -> If we make our react app using react app then there is a Reactscript given which helps in usiong the JS without really using it, while in vite-react comnbination, we directly load that in HTML page.
 -> SPA : A single-page application is defined as an application (web app or website) that loads only a single page and then rewrites the page with new content fetched from a web server as the user interacts with it instead of loading a new page for every interaction
+
+                        ********  JSX  *********
+-> JSX stands for JavaScript XML.
+-> JSX allows us to write HTML in React.
+-> JSX makes it easier to write and add HTML in React.
+-> JSX converts HTML tags into react elements.
+
 -> JSX type files means the files that are returning the HTML  
 -> In JSX it is mandatory always that we only return one element, To solve the problem of returning many elements, we can wrap it into a div, which also can be done as simple <> </>, where <> (empty tag) is known as fragments 
 -> Components : Functions that we are exporting and importing 
@@ -21,6 +32,13 @@ React Fibre : https://github.com/acdlite/react-fiber-architecture  {Best Resourc
     Different types of updates have different priorities — an animation update needs to complete more quickly than, say, an update from a data store.
     A push-based approach requires the app (you, the programmer) to decide how to schedule work. A pull-based approach allows the framework (React) to be smart and make those decisions for you.
 -> If we see any error generally in Tailwind on copying it from website just try to close the tags 
+
+                            *****  Props  *****
+                            
+-> Props are arguments passed into React components.
+-> Props are passed to components via HTML attributes.
+-> props stands for properties. 
+-> When creating a React component, the component's name MUST start with an upper case letter.
 -> Props : Basically props makes the Components reusable. 
 -> we can pass even objects too in json format but the ideal way of doing it is declaring the variable somewhere else and then passing it
 -> We can pass values from one components to another and can access it by passing the argument in the function of card {Like : we passed username and accessed it through props}
