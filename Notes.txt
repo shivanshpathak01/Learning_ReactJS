@@ -47,3 +47,6 @@ React Fibre : https://github.com/acdlite/react-fiber-architecture  {Best Resourc
 
 
 -> So if we write (counter+1) 4 times in counter program and check what will be the output, then output will be still be the same until we make the program as callback function to get the value
+
+-> You can't directly pass parameters inside the function, instead, you need to pass it as a reference or use arrow function syntax
+-> Actually the initial state has color olive and the reload technically resets the state. So, it gets the olive color.
