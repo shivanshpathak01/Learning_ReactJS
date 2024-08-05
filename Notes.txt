@@ -50,3 +50,4 @@ React Fibre : https://github.com/acdlite/react-fiber-architecture  {Best Resourc
 
 -> You can't directly pass parameters inside the function, instead, you need to pass it as a reference or use arrow function syntax
 -> Actually the initial state has color olive and the reload technically resets the state. So, it gets the olive color.
+-> In React we write the variables in curly braces, but if they are already in braces then just write the variables directly without sing the curly braces
