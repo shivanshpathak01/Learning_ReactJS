@@ -66,3 +66,4 @@ React Fibre : https://github.com/acdlite/react-fiber-architecture  {Best Resourc
 
 -> Important : we use Window in React as here, the window object is given while in Next.js there is no window object and server side rendering happens there   
 -> window.navigator.clipboard.writeText() : used to copy to clipboard in reactJS
+-> 
