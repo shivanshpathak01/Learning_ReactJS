@@ -7,10 +7,16 @@
 -> SPA : A single-page application is defined as an application (web app or website) that loads only a single page and then rewrites the page with new content fetched from a web server as the user interacts with it instead of loading a new page for every interaction
 
                         ********  JSX  *********
+                        rules to Writing markup in JSX : 
+
+-> 1. Return a single root, 2. Close all tags, 3. camelCase most of the things 
+
+-> If we write JS in curly braces{}, it will be treated as JS without doing anything else
 -> JSX stands for JavaScript XML.
 -> JSX allows us to write HTML in React.
 -> JSX makes it easier to write and add HTML in React.
 -> JSX converts HTML tags into react elements.
+-> Babel is a tool which is used to converts the JSX to pure JS
 
 -> JSX type files means the files that are returning the HTML  
 -> In JSX it is mandatory always that we only return one element, To solve the problem of returning many elements, we can wrap it into a div, which also can be done as simple <> </>, where <> (empty tag) is known as fragments 
@@ -32,6 +38,16 @@ React Fibre : https://github.com/acdlite/react-fiber-architecture  {Best Resourc
     Different types of updates have different priorities — an animation update needs to complete more quickly than, say, an update from a data store.
     A push-based approach requires the app (you, the programmer) to decide how to schedule work. A pull-based approach allows the framework (React) to be smart and make those decisions for you.
 -> If we see any error generally in Tailwind on copying it from website just try to close the tags 
+
+
+                        *****  React Components *****
+
+-> A component is basically a reusable piece of code like functions 
+-> We return HTML in Components, and it is mandatory to return only a single root {We can do this by using a div}
+-> To render a Component we write them as <ComponentName />
+-> To export multiple Components we use export{component1,component,...}
+-> This import export is possible due to webpack which is already inbuilt in React
+-> We use React Fragments to group a list of childrens without adding extra nodes to the DOM
 
                             *****  Props  *****
 
@@ -66,4 +82,3 @@ React Fibre : https://github.com/acdlite/react-fiber-architecture  {Best Resourc
 
 -> Important : we use Window in React as here, the window object is given while in Next.js there is no window object and server side rendering happens there   
 -> window.navigator.clipboard.writeText() : used to copy to clipboard in reactJS
--> 
