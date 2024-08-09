@@ -1,4 +1,6 @@
                        *********  ReactJS  **********
+-> We Always try to optimise our code using React, we always try to see if there is any node remaining which is not in use, if yes we try to optimise it 
+
 -> React creates a VIRTUAL DOM in memory, instead of making the changes in browser's DOM
 -> createRoot () : it comapres between the DOM of browser with the DOM created by itself and then comapres both of them and then only make changes in the things that got affected by UI updation, while browsers completely refreshes its DOM
 
@@ -51,10 +53,25 @@ React Fibre : https://github.com/acdlite/react-fiber-architecture  {Best Resourc
 
                             *****  Props  *****
 
--> Props are arguments passed into React components.
--> Props are passed to components via HTML attributes.
--> props stands for properties. 
--> When creating a React component, the component's name MUST start with an upper case letter.
+-> Props are the Objects, so we pass on them by destructuring them so that we do not need to do props.title,props.something ans so on {instead of that we directly write title, something and so on in curly braces}
+-> passing string is Direct, while passing numbers is not direct, we need to wrap up the numbers in curly braces
+-> If we want to print Arrays directly, it will print one by one without any comma or separation, same goes for objects too
+-> Conditionals are used in the React very often and basically ternary operator is majorly used 
+-> If any node is not in use and we see that it is just taking up the space, we try to write there null which will make its value null
+1. {price>=30000 ? <p> Discount : 5% </p> : null}
+2. {price>=30000 && <p> Discount : 5% </p>}
+*****  Rendering the Arrays  *****
+
+-> We can pass the Arrays in the form of li means list-items, then they will pass like index values of the Arrays
+-> Second method is we can map the values by features.map((x)=><li>{x}</li>) and will wrap them up in return statement  
+
+******  Dynamic Component Styling  ********
+-> We can directly css for the components and they are decided at the runtime so they are called Dynamic, by writing CSS in curly braces
+{let style = {backgroundColor : price>30000 ? "yellow" : ""}}
+
+
+
+
 -> Props : Basically props makes the Components reusable. 
 -> we can pass even objects too in json format but the ideal way of doing it is declaring the variable somewhere else and then passing it
 -> We can pass values from one components to another and can access it by passing the argument in the function of card {Like : we passed username and accessed it through props}
