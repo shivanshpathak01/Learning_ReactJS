@@ -99,3 +99,44 @@ React Fibre : https://github.com/acdlite/react-fiber-architecture  {Best Resourc
 
 -> Important : we use Window in React as here, the window object is given while in Next.js there is no window object and server side rendering happens there   
 -> window.navigator.clipboard.writeText() : used to copy to clipboard in reactJS
+
+
+Revision Notes :
+-> when we want to add colour to Home if we are at home page and it is coloured and highlighted as home, we use callback and write the classes in backticks ``, and also write (isActive) in NavLink tag: ${isActive?"" : ""} 
+-> ham jo chahte hain wo badle aur baaki cheeze same rahe, jaise maximum time ham chahte hain ki pages change ho but header and footer same rahe, isko karne ke liye react router dom se outlet import kro, aur layout naam ki file banake usme saare componenets import kara do, to wo layout ko as a base maan lega baaki sab jo ham denge upar neeche ka wo same rahengi 
+    Syntax 1st Method : const router = createBrowserRouter([
+  {
+    path:'/',
+    element:<Layout/>,
+    children:[
+      {
+        path:'',
+        element:<Home/>
+      },
+      {
+        path:'contact',
+        element:<Contact/>
+      }
+    ]
+  }
+  ])
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <RouterProvider router={router}/>
+  </StrictMode>,
+)
+These things we have to write in main.jsx
+ 
+ Syntax 2nd Method : 
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element = {<Layout/>}> 
+      <Route path='' element={<Home/>} />
+      <Route path='contact' element={<Contact/>} />
+    </Route>
+  )
+)
+
+-> Using useParams method we can render what we are giving in our url
+-> There is a new concept of loader in which it loads the data way before we click, when we put our cursor on the tab but not click yet, it fetched the data(in case of any API call) so that there is no time delay in getting the response
+->
