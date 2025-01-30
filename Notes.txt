@@ -139,4 +139,9 @@ const router = createBrowserRouter(
 
 -> Using useParams method we can render what we are giving in our url
 -> There is a new concept of loader in which it loads the data way before we click, when we put our cursor on the tab but not click yet, it fetched the data(in case of any API call) so that there is no time delay in getting the response
-->
+
+
+Context API
+-> Library that acts as global for all, Pure js Library
+-> Basically we wrap up all the components in this UserContext and then this will become the provider 
+-> 
